@@ -1,10 +1,13 @@
-# Gitment
+# Gitment Pro
 
+> 基于gitment项目的修复升级版本
 
-[![NPM version][npm-image]][npm-url]
+* 授权接口改为GitHub官方接口
+* 兼容至IE10
+* 开发环境升级
+* 构造方法改为 => `const gitment = new Gitment.construct({...`
 
-[npm-image]: https://img.shields.io/npm/v/gitment.svg
-[npm-url]: https://www.npmjs.com/package/gitment
+---------------------
 
 Gitment is a comment system based on GitHub Issues,
 which can be used in the frontend without any server-side implementation.
