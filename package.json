@@ -1,11 +1,11 @@
 {
-  "name": "gitment",
-  "version": "0.0.3",
+  "name": "gitment-pro",
+  "version": "0.0.1",
   "description": "A comment system based on GitHub Issues",
   "main": "./dist/gitment.js",
   "author": {
-    "name": "Shiquan Sun",
-    "url": "https://github.com/imsun"
+    "name": "refind-x",
+    "url": "https://refind-x.com"
   },
   "keywords": [
     "comment system",
@@ -13,12 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/imsun/gitment"
+    "url": "https://github.com/tower1229/gitment-pro"
   },
   "bugs": {
-    "url": "https://github.com/imsun/gitment/issues"
+    "url": "https://github.com/tower1229/gitment-pro/issues"
   },
-  "homepage": "https://github.com/imsun/gitment",
+  "homepage": "https://github.com/tower1229/gitment-pro",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "dev": "webpack-dev-server --config webpack.dev.config.js --host 0.0.0.0 --progress --profile --colors"
