@@ -99,7 +99,7 @@ export const construct = class {
       }, options)
 
       this.state.user.isLoggingIn = true
-      http.post('https://github.com/login/oauth/access_token', {
+      http.post('https://gh-oauth.openapi.link/', {
           code,
           client_id,
           client_secret,
