@@ -1,12 +1,10 @@
 import { LS_ACCESS_TOKEN_KEY } from './constants'
 
-export const isString = s => toString.call(s) === '[object String]'
-
 export function getTargetContainer(container) {
   let targetContainer
   if (container instanceof Element) {
     targetContainer = container
-  } else if (isString(container)) {
+  } else if (container.split) {
     targetContainer = document.getElementById(container)
   } else {
     targetContainer = document.createElement('div')

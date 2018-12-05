@@ -24,7 +24,7 @@ function extendRenderer(instance, renderer) {
   }
 }
 
-class Gitment {
+export const construct = class {
   get accessToken() {
     return localStorage.getItem(LS_ACCESS_TOKEN_KEY)
   }
@@ -110,7 +110,7 @@ class Gitment {
         })
         .catch(e => {
           this.state.user.isLoggingIn = false
-          alert(e)
+          console.warn(e)
         })
     } else {
       this.update()
@@ -339,5 +339,3 @@ class Gitment {
       })
   }
 }
-
-module.exports = Gitment

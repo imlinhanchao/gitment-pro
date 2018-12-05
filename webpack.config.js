@@ -1,22 +1,22 @@
 const path = require('path')
 
 module.exports = {
-  context: path.join(__dirname, 'src'),
+  mode: "production",
+  context: path.resolve(__dirname, "src"),
   entry: './gitment.js',
   devtool: 'source-map',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.resolve(__dirname, "dist"),
     filename: 'gitment.browser.js',
-    libraryTarget: 'var',
-    library: 'Gitment',
+    library: 'Gitment'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /^node_mocules/,
-        loaders: ['babel-loader'],
-      },
-    ],
-  },
+        loader: 'babel-loader'
+      }
+    ]
+  }
 }

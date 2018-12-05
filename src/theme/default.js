@@ -71,7 +71,7 @@ function renderComments({ meta, comments, commentReactions, currentPage, user, e
         instance.init()
           .catch(e => {
             initButton.removeAttribute('disabled')
-            alert(e)
+            console.warn(e)
           })
       }
       initButton.innerText = 'Initialize Comments'
@@ -309,7 +309,7 @@ function renderEditor({ user, error }, instance) {
         submitButton.innerText = 'Comment'
       })
       .catch(e => {
-        alert(e)
+        console.warn(e)
         submitButton.removeAttribute('disabled')
         submitButton.innerText = 'Comment'
       })
@@ -324,8 +324,8 @@ function renderFooter() {
   container.className = 'gitment-container gitment-footer-container'
   container.innerHTML = `
     Powered by
-    <a class="gitment-footer-project-link" href="https://github.com/imsun/gitment" target="_blank">
-      Gitment
+    <a class="gitment-footer-project-link" href="https://github.com/tower1229/gitment-pro" target="_blank">
+      Gitment Pro
     </a>
   `
   return container
