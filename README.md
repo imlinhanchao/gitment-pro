@@ -7,6 +7,8 @@
 * 开发环境升级
 * 构造方法改为 => `const gitment = new Gitment.construct({...`
 
+[应用示例](https://refined-x.com)
+
 ---------------------
 
 Gitment is a comment system based on GitHub Issues,
