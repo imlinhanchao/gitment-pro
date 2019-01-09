@@ -13,10 +13,12 @@ function extendRenderer(instance, renderer) {
 
     autorun(() => {
       const e = render(instance.state, instance)
-      if (targetContainer.firstChild) {
-        targetContainer.replaceChild(e, targetContainer.firstChild)
-      } else {
-        targetContainer.appendChild(e)
+      if(targetContainer){
+        if (targetContainer.firstChild) {
+          targetContainer.replaceChild(e, targetContainer.firstChild)
+        } else {
+          targetContainer.appendChild(e)
+        }
       }
     })
 
